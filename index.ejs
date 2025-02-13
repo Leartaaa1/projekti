@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shkolla</title>
-    <link rel="stylesheet" href="/style.css">
+    <!-- Përdorimi i stilit Bootstrap për navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJx3y3I2WbD0clLx7Xg5U5gYAc3QIiA+g/wC3iw4FZJX9Sz/0v75v8c4BkFO" crossorigin="anonymous">
+    <style>
+        /* Shtimi i një stili të thjeshtë për navbar-in */
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #007bff;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mirsevini ne shkollen tone </h1>
-    <nav>
-        <a href="/">Fillimi</a>
-        <a href="/courses">Kurset</a>
-        <a href="/signup">Regjistrohu</a>
-        <a href="/login">Kyçu</a>
+    <!-- Titulli -->
+    <h1 class="text-center my-4">Mirsevini në shkollën tonë</h1>
+
+    <!-- Navbar i bazum ne bootstap-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Shkolla</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Fillimi</a>
+                <a class="nav-link" href="/courses">Kurset</a>
+                <a class="nav-link" href="/signup">Regjistrohu</a>
+                <a class="nav-link" href="/login">Kyçu</a>
+               
+            </div>
+        </div>
     </nav>
+
+    <div class="container mt-4">
+        <p>Informacione të tjera mund të shfaqen këtu.</p>
+    </div>
+
+    <!-- Lidhje me bootstrap js dhe popper.js per funksionalitetin e navbar dhe dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybGZR%2B%2Fid8nYjWi5Y9Qt42gx12D1fzz6X5FhMd3Om5oZbss%2F5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqfjP4iyjjR1c8f6Ox0bmYa9pYad1zw3y%2FwtwZntJeUEM%2F" crossorigin="anonymous"></script>
 </body>
 </html>
+
